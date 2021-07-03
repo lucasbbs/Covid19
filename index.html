@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Modelo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <h1>COVID-19</h1>
+    <div class="container wrap">
+      <section class="item">
+        <h5>Total Confirmados</h5>
+        <p id="confirmed"></p>
+        <h6 id="tconfirmed"></h6>
+      </section>
+      <section class="item">
+        <h5>Total Mortes</h5>
+        <p id="death"></p>
+        <h6 id="tdeath"></h6>
+      </section>
+      <section class="item">
+        <h5>Total Recuperados</h5>
+        <p id="recovered"></p>
+        <h6 id="trecovered"></h6>
+      </section>
+      <section class="item">
+        <h5 id="actives">Total Ativos</h5>
+        <p id="active"></p>
+        <h6 id="tactive"></h6>
+      </section>
+    </div>
+    <div>
+      <select class="custom-select" id="combo">
+        <option>Global</option>
+      </select>
+      <input id="today" type="date" min="2020-01-01" />
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
